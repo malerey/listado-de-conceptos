@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Listado de conceptos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <table>
+    <thead>
+
+      <tr>
+        <th colspan="6">Listado Ada Online</th>
+      </tr>
+    </thead>
+    <thead>
+
+      <tr>
+        <th>Elemento</th>
+        <th>Qué es</th>
+        <th>Qué hace</th>
+        <th>Ejemplo</th>
+        <th>Clase</th>
+        <th>Fecha</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&lt;html&gt; &lt;/html&gt;</td>
+        <td>etiqueta</td>
+        <td>Le indica al navegador que es una página web HTML. Se abre arriba de todo y se cierra abajo de todo.</td>
+        <td>&lt;html&gt;contenido de la página web&lt;/html&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;head&gt; &lt;/head&gt;</td>
+        <td>etiqueta</td>
+        <td>Le indica al navegador que acá comienza la información que debe tener sobre la página web. Se abre después
+          de &lt;html&gt; y se cierra al terminar el contenido del head.</td>
+        <td>&lt;head&gt;contenido del head&lt;/head&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;title&gt; &lt;/title&gt;</td>
+        <td>etiqueta</td>
+        <td>Le indica al navegador el título de la página web (se ve arriba en la barra del navegador).Va dentro del
+          head.</td>
+        <td>&lt;title&gt; Mi primera página web&lt;/title&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;style type='text/css'&gt; &lt;/style&gt;</td>
+        <td>etiqueta (style type)atributo (text/css)</td>
+        <td>Le indica al navegador el estilo de la página web en HTML. Va dentro del head. Incluye los estilos que
+          tienen los diferentes names de la página web.</td>
+        <td>&lt;style type='text/css'&gt; h1 { color: red; } p { color: blue; } .verde { color: green; } #titulo {
+          color: orange; } &lt;/style&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;body&gt; &lt;/body&gt;</td>
+        <td>etiqueta</td>
+        <td>Encierra el contenido de la página web que ve el usuario.</td>
+        <td>&lt;body&gt;&lt;h1&gt;Título&lt;/h1&gt;&lt;p&gt;Contenido que tendrá el párrafo.&lt;/p&gt;&lt;/body&gt;
+        </td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt; &lt;/h1&gt;</td>
+        <td>etiqueta</td>
+        <td>Encierra el título de nivel 1 (el más grande). Puede ir de 1 a 6, va disminuyendo en tamaño e importancia
+          cuanto mayor es el número.H1 solo debe haber uno por página.</td>
+        <td>&lt;h1&gt;Título&lt;/h1&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;hr&gt;</td>
+        <td>etiqueta</td>
+        <td>Introduce una barra horizontal que abarca todo el ancho del body. Esta etiqueta no se cierra.</td>
+        <td> &lt;h1 class='verde'&gt;Ada Lovelace&lt;/h1&gt; &lt;hr&gt; &lt;h2 id='titulo'
+          class='verde'&gt;Biografía&lt;/h2&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>color:</td>
+        <td>propiedad</td>
+        <td>Indica el color del texto de un name. El color se indica con el nombre del color en inglés, con código
+          hexadecimal o con código RGB.El color se hereda.Son dos valores para cada color: 2 para rojo, 2 para verde y
+          2 para azul. En hexadecimal, blanco es todas F (máximo valor) y negro es todos 0 (mínimo valor). En estos dos
+          casos, se puede poner #FFF (en lugar de #FFFFFF) o #000 (en lugar de #000000).</td>
+        <td>h1 { color: red; }</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>h1, p, etc.</td>
+        <td>selector</td>
+        <td>Selecciona el name (puede ser cualquiera de los names, no solo h1 o p) para darle una clase, en CSS o dentro
+          de la etiqueta style en HTML.</td>
+        <td>&lt;style type='text/css'&gt; h1 { color: red; } p { color: blue; }&lt;/style&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>.verde</td>
+        <td>clase</td>
+        <td>Nombra una clase y le da atributos. El nombre puede ser cualquiera, en este caso, verde. Se indica que es
+          una clase anteponiendo un punto al nombre.</td>
+        <td>&lt;style type='text/css'&gt; .verde { color: green; }&lt;/style&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>#titulo</td>
+        <td>ID</td>
+        <td>Nombra un id y le da atributos. El nombre puede ser cualquiera, en este caso, titulo. Se indica que es un id
+          anteponiendo el símbolo de numeral al nombre.</td>
+        <td>&lt;style type='text/css'&gt; #titulo { color: orange; }&lt;/style&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>class</td>
+        <td>atributo</td>
+        <td>Indica qué clase se le va a aplicar al contenido encerrado por esa etiqueta.</td>
+        <td>&lt;h1 class='verde'&gt;Ada Lovelace&lt;/h1&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td> id</td>
+        <td>atributo</td>
+        <td>Indica qué ID se le va a aplicar al contenido encerrado por esa etiqueta.</td>
+        <td>&lt;h2 id='titulo' class='verde'&gt;Biografía&lt;/h2&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;strong&gt; &lt;/strong&gt;</td>
+        <td>etiqueta</td>
+        <td>Hace que el texto encerrado por esta etiqueta se ponga en negrita de manera contextual (es decir, destacado
+          respecto del texto que lo rodea).</td>
+        <td>&lt;strong&gt;Augusta Ada King, Condesa de Lovelace&lt;/strong&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;p&gt; &lt;/p&gt;</td>
+        <td>etiqueta</td>
+        <td>Encierra el contenido de un párrafo. Es un name en bloque. De manera predeterminada, pone un margen arriba y
+          abajo.</td>
+        <td>&lt;p&gt;Contenido del párrafo.&lt;/p&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;a&gt; &lt;/a&gt;</td>
+        <td>etiqueta</td>
+        <td>Indica un vínculo. Para que funcione como tal, tiene que incluir un atributo que indique dónde está el
+          contenido de ese vínculo. Por ex, href.</td>
+        <td>&lt;a href='https://es.wikipedia.org/wiki/Anna_Isabella_Noel_Byron'&gt;Anna Isabella&lt;/a&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>href</td>
+        <td>atributo</td>
+        <td>Se antepone a la dirección donde se encuentra el contenido al que hacemos referencia. Va dentro de la
+          etiqueta &lt;a&gt; y se escribe seguido de signo = y comillas.Puede hacer referencia a una URL (http:// o
+          https://) o puede hacer referencia a un archivo en una ubicación local (en nuestra máquina [se usa .. para
+          indicar que se debe volver a dos ubicaciones anteriores en la ruta de acceso] o a una sección del mismo
+          archivo HTML [se usa # para hacer referencia a ese marcador local y el marcador o punto de anclaje se define
+          con el atributo 'id'].</td>
+        <td>&lt;a href='https://es.wikipedia.org/wiki/Anna_Isabella_Noel_Byron'&gt;Anna Isabella&lt;/a&gt; [Ir a
+          URL]------------------------------------------------------------------------------Lorem ipsum, &lt;a
+          href='../contacto_3.html' target='_blank'&gt;contacto 3&lt;/a&gt; sit amet consectetur adipisicing elit.
+          Dolorem voluptates fuga repudiandae repellendus alias ratione dignissimos facere? Consequuntur &lt;a
+          href='../../contacto_4.html'&gt;contacto 4&lt;/a&gt; in laborum eveniet sapiente aliquid fugiat? [Ir a
+          ubicación local]------------------------------------------------------------------------------&lt;a
+          href='#seccion-adolescencia'&gt;Ir a sección 'Adolescencia'&lt;/a&gt; [Vínculo para ir al marcador]&lt;h2
+          id='seccion-adolescencia'&gt;Adolescencia&lt;/h2&gt; [Definición del marcador]</td>
+        <td>144</td>
+        <td>5-ago-1912-ago-1912-ago-19</td>
+      </tr>
+      <tr>
+        <td>&lt;ul&gt; &lt;/ul&gt;</td>
+        <td>etiqueta</td>
+        <td>Indica una lista desordenada (unordered list). Encierra toda la lista.</td>
+        <td>&lt;ul&gt; &lt;li&gt;Uno&lt;/li&gt; &lt;li&gt;Dos&lt;/li&gt; &lt;li&gt;Tres&lt;/li&gt;&lt;/ul&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;ol&gt; &lt;/ol&gt;</td>
+        <td>etiqueta</td>
+        <td>Indica una lista ordenada ordered list). Encierra toda la lista.</td>
+        <td>&lt;ol&gt; &lt;li&gt;Uno&lt;/li&gt; &lt;li&gt;Dos&lt;/li&gt; &lt;li&gt;Tres&lt;/li&gt;&lt;/ol&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;li&gt; &lt;/li&gt;</td>
+        <td>etiqueta</td>
+        <td>Encierra cada name que compone una lista.</td>
+        <td>&lt;ul&gt; &lt;li&gt;Uno&lt;/li&gt; &lt;li&gt;Dos&lt;/li&gt; &lt;li&gt;Tres&lt;/li&gt;&lt;/ul&gt;</td>
+        <td>1</td>
+        <td>5-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;link&gt;</td>
+        <td>etiqueta</td>
+        <td>Permite conectar un contenido (por ex, el archivo HTML) con otro (por ex, el archivo CSS).El atributo href
+          vincula con el archivo deseado (en este caso, el archivo CSS con el estilo de la página HTML).El atributo type
+          indica qué tipo de archivo es (text/css).El atributo rel indica qué relación tiene el archivo conectado con la
+          página HTML actual.Esta etiqueta no se cierra.</td>
+        <td>&lt;link href='styles_segunda_pag_web.css' type='text/css' rel='stylesheet'&gt;</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>atributo</td>
+        <td>Indica el tipo del name mencionado. Se escribe seguido del signo = y comillas.</td>
+        <td>&lt;link href='styles_segunda_pag_web.css' type='text/css' rel='stylesheet'&gt;&lt;/link&gt;</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>rel</td>
+        <td>atributo</td>
+        <td>Indica la relación entre el name conectado y la página HTML actual. En este caso, el archivo conectado es la
+          hoja de estilos de la página HTML.</td>
+        <td>&lt;link href='styles_segunda_pag_web.css' type='text/css' rel='stylesheet'&gt;&lt;/link&gt;</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;span&gt; &lt;/span&gt;</td>
+        <td>etiqueta</td>
+        <td>Encierra un contenido que se desea aislar del resto, por ex, para darle un formato determinado. Sin un
+          atributo definido, no hace nada predeterminado más que comportarse como texto normal.</td>
+        <td>&lt;span&gt;Un pedacito de texto&lt;/span&gt;</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;br&gt;</td>
+        <td>etiqueta</td>
+        <td>Introduce un retorno de línea (termina la línea actual y comienza una nueva). Del inglés, break, line
+          break.Es una etiqueta que no se cierra.</td>
+        <td>&lt;p class='verde'&gt;Ada Lovelace fue una matemática, informática y escritora británica.&lt;br&gt;Se la
+          considera como la primera programadora de ordenadores.&lt;/p&gt;</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;!DOCTYPE html&gt; &lt;/html&gt;</td>
+        <td>etiqueta</td>
+        <td>Le indica al navegador que es una página web HTML 5. Se abre arriba de todo y se cierra abajo de todo.</td>
+        <td>&lt;!DOCTYPE html&gt;contenido de la página web&lt;/html&gt;</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>lang</td>
+        <td>atributo</td>
+        <td>Indica el idioma del documento. Se escribe seguido del signo = y comillas. ('es' para español, 'en' para
+          inglés).</td>
+        <td>&lt;html lang='es'&gt;</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;meta&gt;</td>
+        <td>etiqueta</td>
+        <td>Se usa para definir ciertos metadatos, en este caso, el conjunto de caracteres que se usa en la página
+          web.Esta etiqueta no se cierra.</td>
+        <td>&lt;meta charset='UTF-8'&gt;</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>charset</td>
+        <td>atributo</td>
+        <td>Indica el conjunto de caracteres que se usa en la página web. Se escribe seguido del signo = y comillas.
+        </td>
+        <td>&lt;meta charset='UTF-8'&gt;</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>text-decoration:</td>
+        <td>propiedad</td>
+        <td>Define la decoración que debe tener un name. En este caso, decir que el name 'a:link' no tiene que tener
+          ninguna decoración (none), significa que no se ve de otro color ni subrayado, como es habitual en los
+          vínculos.</td>
+        <td>a:link { text-decoration: none;}</td>
+        <td>2</td>
+        <td>7-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;div&gt; &lt;/div&gt;</td>
+        <td>etiqueta</td>
+        <td>Encierra un name en bloque. Puede no tener contenido en el archivo HTML, pero sí debe tener un alto (height)
+          y un ancho (width) en el archivo CSS para que el div se vea.En este caso, al div se le asigna la clase
+          'header' y el CSS define que la esa clase (.header) tiene atributos determinados, entre ellos, el alto y el
+          ancho.</td>
+        <td>&lt;div class='header'&gt; &lt;/div&gt;</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>background-color:</td>
+        <td>propiedad</td>
+        <td>Define el color de fondo del name que modifica. El color se indica con el nombre del color en inglés, con
+          código hexadecimal o con código RGB.</td>
+        <td>.header { background-color: #343a40; height: 200px; width: 200px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>height:</td>
+        <td>propiedad</td>
+        <td>Define la altura del name. Se puede expresar en píxeles (px) o en porcentaje respecto del contenedor que
+          contiene el name modificado.</td>
+        <td>.header { background-color: #343a40; height: 200px; width: 200px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>width:</td>
+        <td>propiedad</td>
+        <td>Define el ancho del name. Se puede expresar en píxeles (px) o en porcentaje respecto del contenedor que
+          contiene el name modificado.Si no se pone (por ex, en un div), el name ocupa todo el ancho de su contenedor.
+        </td>
+        <td>.header { background-color: #343a40; height: 200px; width: 200px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>display:</td>
+        <td>propiedad</td>
+        <td>Define la forma en que se muestra el name: en bloque o en línea.</td>
+        <td>.header { display: inline-block;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>inline-block</td>
+        <td>valor</td>
+        <td>Indica que el name debe comportarse como name en línea, es decir, se muestra al lado de otro name, siguiendo
+          el flujo que seguiría el texto. </td>
+        <td>.header { display: inline-block;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>margin:</td>
+        <td>propiedad</td>
+        <td>Indica el margen que debe tener un name (en los cuatro lados). Se puede expresar en píxeles (px) o en
+          porcentaje respecto del contenedor que contiene el name modificado.margin='0' dentro de body en CSS hace que
+          no haya un borde blanco alrededor del body.</td>
+        <td>.header { margin: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>margin-top:</td>
+        <td>propiedad</td>
+        <td>Indica el margen superior que debe tener un name. Se puede expresar en píxeles (px) o en porcentaje respecto
+          del contenedor que contiene el name modificado.</td>
+        <td>.header { margin-top: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>margin-bottom:</td>
+        <td>propiedad</td>
+        <td>Indica el margen inferior que debe tener un name. Se puede expresar en píxeles (px) o en porcentaje respecto
+          del contenedor que contiene el name modificado.</td>
+        <td>.header { margin-bottom: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>margin-left:</td>
+        <td>propiedad</td>
+        <td>Indica el margen izquierdo que debe tener un name. Se puede expresar en píxeles (px) o en porcentaje
+          respecto del contenedor que contiene el name modificado.</td>
+        <td>.header { margin-left: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>margin-right:</td>
+        <td>propiedad</td>
+        <td>Indica el margen derecho que debe tener un name. Se puede expresar en píxeles (px) o en porcentaje respecto
+          del contenedor que contiene el name modificado.</td>
+        <td>.header { margin-right: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>border:</td>
+        <td>propiedad</td>
+        <td>Indica el borde que debe tener un name (en los cuatro lados). Se puede expresar en píxeles (px) o en
+          porcentaje respecto del contenedor que contiene el name modificado.Sintaxis: border: 20px solid white;</td>
+        <td>.header { border: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>padding:</td>
+        <td>propiedad</td>
+        <td>Indica la separación interior que debe tener un name (en los cuatro lados). Se puede expresar en píxeles
+          (px) o en porcentaje respecto del tamaño del name modificado.</td>
+        <td>.header { padding: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>padding-top:</td>
+        <td>propiedad</td>
+        <td>Indica la separación interior que debe tener un name en el lado superior. Se puede expresar en píxeles (px)
+          o en porcentaje respecto del tamaño del name modificado.</td>
+        <td>.header { padding-top: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>padding-bottom:</td>
+        <td>propiedad</td>
+        <td>Indica la separación interior que debe tener un name en el lado inferior. Se puede expresar en píxeles (px)
+          o en porcentaje respecto del tamaño del name modificado.</td>
+        <td>.header { padding-bottom: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>padding-left:</td>
+        <td>propiedad</td>
+        <td>Indica la separación interior que debe tener un name en el lado izquierdo. Se puede expresar en píxeles (px)
+          o en porcentaje respecto del tamaño del name modificado.</td>
+        <td>.header { padding-left: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>padding-right:</td>
+        <td>propiedad</td>
+        <td>Indica la separación interior que debe tener un name en el lado derecho. Se puede expresar en píxeles (px) o
+          en porcentaje respecto del tamaño del name modificado.</td>
+        <td>.header { padding-right: 20px;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>name en bloque</td>
+        <td>definición teórica</td>
+        <td>name que se muestra uno abajo del otro de manera predeterminada (body, párrafo, título, etc.)</td>
+        <td></td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>name en línea</td>
+        <td>definición teórica</td>
+        <td>name que se muestra al lado de otro name, siguiendo el flujo que seguiría el texto.</td>
+        <td></td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>font-family:</td>
+        <td>propiedad</td>
+        <td>Indica la tipografía que se debe usar en el name modificado. La primera tipografía es la preferida, la
+          segunda es la que se debe mostrar en caso de que no pueda mostrarse la primera y la tercera, en caso de que no
+          pueda mostrarse ninguna de las dos anteriores. Si el nombre de la tipografía lleva más de una palabra, se
+          encierra entre comillas (dobles o simples).Las tipografías pueden tener serifas (serif), ser sin serifas
+          (non-serif) o monospace (en que el espacio que ocupa el carácter se mantiene constante para todas las letras).
+        </td>
+        <td>.header { font-family: 'Courier New', Courier, monospace;}</td>
+        <td>3</td>
+        <td>9-ag.-19</td>
+      </tr>
+      <tr>
+        <td>@import</td>
+        <td>comando</td>
+        <td>Permite importar contenido al archivo CSS. En este caso, se usa para importar una familia de fuentes desde
+          Google Fonts.</td>
+        <td>@import url('https://fonts.googleapis.com/css?family=Monoton|Open+Sans+Condensed:300|Prata&display=swap');
+        </td>
+        <td>4</td>
+        <td>12-ag.-19</td>
+      </tr>
+      <tr>
+        <td>Lorem Ipsum</td>
+        <td>abreviatura Emmet</td>
+        <td>Generador de texto al azar. Se escribe 'lorem' seguido de la cantidad de palabras que se quieren generar y
+          se pulsa la tecla TAB o ENTER en el teclado. </td>
+        <td>&lt;p&gt;lorem100 &lt;/&gt; (Genera un párrafo de 100 palabras).</td>
+        <td>4</td>
+        <td>12-ag.-19</td>
+      </tr>
+      <tr>
+        <td>target</td>
+        <td>atributo</td>
+        <td>Se usa dentro de una etiqueta &lt;a&gt; para indicar dónde se debe abrir un vínculo. Seguido de '_blank'
+          significa que se abre en una pestaña nueva. Se escribe seguido de signo = y comillas.</td>
+        <td>&lt;a href='../contacto_3.html' target='_blank'&gt;contacto 3&lt;/a&gt;</td>
+        <td>4</td>
+        <td>12-ag.-19</td>
+      </tr>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>etiqueta</td>
+        <td>Se usa para introducir una imagen en el archivo HTML. La barra de cierre de la etiqueta se incluye antes de
+          poner el ángulo de cierre.</td>
+        <td>&lt;img
+          src='https://i.kinja-img.com/gawker-media/image/upload/s--8eaT6rXo--/c_scale,f_auto,fl_progressive,q_80,w_800/ke0jldxcn8e0yxrtggun.jpg'/&gt;
+        </td>
+        <td>4</td>
+        <td>12-ag.-19</td>
+      </tr>
+      <tr>
+        <td>src</td>
+        <td>atributo</td>
+        <td>Se usa con la etiqueta img para indicar cuál es el origen de la imagen. Se escribe seguido de signo = y
+          comillas.</td>
+        <td>&lt;img
+          src='https://i.kinja-img.com/gawker-media/image/upload/s--8eaT6rXo--/c_scale,f_auto,fl_progressive,q_80,w_800/ke0jldxcn8e0yxrtggun.jpg'/&gt;
+        </td>
+        <td>4</td>
+        <td>12-ag.-19</td>
+      </tr>
+      <tr>
+        <td>scroll-behavior</td>
+        <td>propiedad</td>
+        <td>Define cómo debe comportarse la acción de desplazarse en la página. 'smooth' hace que se desplace más lento.
+        </td>
+        <td>html { scroll-behavior: smooth;}</td>
+        <td>4</td>
+        <td>12-ag.-19</td>
+      </tr>
+      <tr>
+        <td>Ctrl+K+C / Ctrl+K+U</td>
+        <td>acceso directo</td>
+        <td>Una de las posibles combinaciones de teclas que permite convertir un bloque de código en comentario
+          (Ctrl+K+C) o quitarle el comentario (Ctrl+K+U).</td>
+        <td></td>
+        <td>5</td>
+        <td>14-ag.-19</td>
+      </tr>
+      <tr>
+        <td>font-size:</td>
+        <td>propiedad</td>
+        <td>Indica el tamaño de la tipografía. Puede definirse en números o de manera relativa a su name padre (small,
+          smaller, large, larger).</td>
+        <td>.header { font-size: smaller;}</td>
+        <td>5</td>
+        <td>14-ag.-19</td>
+      </tr>
+      <tr>
+        <td>font-weight:</td>
+        <td>propiedad</td>
+        <td>Indica el grosor de la tipografía. Puede definirse en números o de manera relativa a su name padre (bold,
+          bolder, light, lighter).400 suele ser normal y 700, bold.</td>
+        <td>.header { font-weight: bolder;}</td>
+        <td>5</td>
+        <td>14-ag.-19</td>
+      </tr>
+      <tr>
+        <td>Inspect</td>
+        <td>función</td>
+        <td>Estando en la página web, botón derecho, clic en Inspect abre un menú contextual que permite ver el box
+          model (margin, border, padding) y el código de los distintos names. Lo que aparece en cursiva son atributos y
+          propiedades que el name trae de manera predeterminada. Se puede hacer cambios en la ventana de Inspect para
+          ver temporalmente cómo quedaría, pero no se guardan.Se puede ir al menú de tres puntos y seleccionar 'Undock'
+          para separar la ventana Inspect.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>bash</td>
+        <td>consola de GIT</td>
+        <td></td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>CMD</td>
+        <td>consola de Windows</td>
+        <td></td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>git init</td>
+        <td>comando</td>
+        <td>Crea un repositorio de GIT en mi sistema. Inicia la supervisión de ese contenido.</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>git status</td>
+        <td>comando</td>
+        <td>Informa el estado del contenido supervisado por GIT. Verde: sin cambios, ya incluido en el repositorio
+          local. Rojo: con cambios, todavía no incluido en el repositorio local.</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>git add .</td>
+        <td>comando</td>
+        <td>Agrega el contenido modificado (rojo) a mi repositorio local.</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>git commit -m 'mensaje'</td>
+        <td>comando</td>
+        <td>Prepara el contenido de mi repositorio local para enviarlo a Git Hub (antes de git push).</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>git push origin NombreDeBranch</td>
+        <td>comando</td>
+        <td>Crea un repositorio en Git Hub con contenido que enviamos desde nuestro repositorio local.</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>git pull origin NombreDeBranch</td>
+        <td>comando</td>
+        <td>Actualiza nuestro repositorio local con contenido del repositorio remoto en Git Hub.</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>git push</td>
+        <td>comando</td>
+        <td>Envía el contenido de mi repositorio local al repositorio en Git Hub.</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>git pull</td>
+        <td>comando</td>
+        <td>Trae contenido de Git Hub a mi repositorio local.</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>pull request</td>
+        <td>comando</td>
+        <td>Se usa en Git Hub para solicitarle al propietario de un repositorio que me permita hacer una copia de su
+          código en GitHub a mi sistema.</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>:q</td>
+        <td>comando</td>
+        <td>Permite salir del editor VIM.</td>
+        <td></td>
+        <td>6 y 7</td>
+        <td>16 y 21-ago-19</td>
+      </tr>
+      <tr>
+        <td>.clase name</td>
+        <td>sintaxis</td>
+        <td>Sintaxis en CSS: se coloca una clase que define a un div, espacio y el name que está dentro de ese div que
+          queremos modificar (en este ex, las imágenes dentro del div img-portfolio).</td>
+        <td>.img-portfolio img { width: 300px;}</td>
+        <td>8</td>
+        <td>23-ag.-19</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
